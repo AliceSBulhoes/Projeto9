@@ -2,7 +2,7 @@
 
 ### Criando uma Branch
 
-<p>git chekout -b "NOME DA BRANCH"</p>
+<p>git checkout -b "NOME DA BRANCH"</p>
 
 ### Verificando Branch existente
 
