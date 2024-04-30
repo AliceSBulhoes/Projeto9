@@ -71,3 +71,45 @@ section{
     width: 100%;
     height: 100vh;
 }
+img{
+    width: 40px;
+    height: 40px;
+}
+iframe{
+    width: 100%;
+}
+@media (max-width:800px){
+
+    nav ul li{
+        width: 100%;
+        float: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul ul{
+        position: static;
+        overflow: hidden;
+        max-height:0 ;
+        transition: all 0.5s;
+    }
+    nav ul li:hover ul{
+        height: auto;
+        float: left;
+    }
+    #btnMenu{
+        display: none;
+    }
+    label[for="btnMenu"]{
+        display: block;
+    }
+    #btnMenu:checked ~ nav{
+        margin-left: 0;
+    }
+    nav{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+}
